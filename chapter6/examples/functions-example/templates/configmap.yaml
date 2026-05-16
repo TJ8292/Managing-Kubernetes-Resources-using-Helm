@@ -8,6 +8,6 @@ metadata:
   annotations:
     {{- toYaml .Values.annotations | nindent 4 }}
 data:
-  path: {{ quote .Values.fs.path }}
+  path: {{ .Values.fs.path | clean | quote }}
   config.properties: |-
     {{-  tpl (.Files.Get "files/chapter-details.cfg") . | nindent 4}}
