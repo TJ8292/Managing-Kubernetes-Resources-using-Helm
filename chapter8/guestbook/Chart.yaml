@@ -7,5 +7,5 @@ appVersion: v5
 dependencies:
   - name: redis
     repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
-    version: 15.5.x
+    version: 25.5.x
     condition: redis.enabled
